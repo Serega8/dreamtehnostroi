@@ -6,31 +6,48 @@
 
     <? } ?>
 <? } ?>
-
-
-
-
-
-<? if (!$_SESSION['y'] && (!empty($items))) { ?>
-    <div id="poll">
-        <form method="POST" action="/poll">
-            Голосование<br/>
-            <?= $poll['q']; ?><br/>
-            <? foreach ($items as $k => $item) { ?>
-                <input <? if ($k == 0) echo 'checked'; ?> name='poll' type='radio' value="<?= $item['id']; ?>" /><label><?= $item['text']; ?></label><br/>
-
-            <? } ?>
-            <button>ОК</button>
-        </form>
-    </div>
-<? } else if (!empty($items)) { ?>
-    <div id="poll">
-        Голосование<br/>
-        <?= $poll['q']; ?><br/>
-        <? foreach ($items as $k => $item) { ?>
-            <?= $item['text']; ?>
-            <progress class="poll_progress" min="0" max="100" value="<?= $item['val']; ?>"><?= $item['val']; ?>%</progress><br/>
-            <? } ?>
-        <p>Вы проголосовали</p>
-    </div>
-<? } ?>
+        
+	<div class="center">	
+		<div class="about">
+			<div class="column column1">
+				<h2><a href="#">Алмазное сверление</a></h2>
+				<img class="img" src="/content/images/main1.jpg" alt="">
+				<div class="inside">
+					<p>-технологический процесс создания цилиндрического отверстия в строительном материале (бетон, железобетон, и т.д.) с применением алмазного инструмента.</p>		
+					<a href="#">Подробнее</a>
+				</div>
+				<div class="null"></div>
+			</div> 
+			<div class="column column2">
+				<h2><a href="#">Алмазная резка</a></h2>
+				<img class="img" src="/content/images/main2.jpg" alt="">
+				<div class="inside">
+				<p>-процесс образования технологических отверстий и проёмов различных форм в строительных конструкциях с применением алмазного инструмента.</p>		
+				<a href="#">Подробнее</a>
+				</div>
+				<div class="null"></div>
+			</div> 
+			<div class="null"></div>
+			<div class="column column3">
+				<h2><a href="#">Резка канатом</a></h2>
+				<img class="img" src="/content/images/main3.jpg" alt="">
+				<div class="inside">
+				<p>-технологический процесс образования технологических отверстий и демонтаж строительных конструкций.</p>		
+				<a href="#">Подробнее</a>
+				</div>
+				<div class="null"></div>
+			</div> 
+			<div class="column column4">
+				<h2><a href="#">Демонтажные работы</a></h2>
+				<img class="img" src="/content/images/main4.jpg" alt="">
+				<div class="inside">
+				<p>-технологический процесс создания цилиндрического отверстия в строительном материале (бетон, железобетон) с применением алмазного инструмента.</p>		
+				<a href="#">Подробнее</a>
+				</div>
+				<div class="null"></div>
+			</div>  
+			<div class="null"></div>
+		</div>	 
+	</div>	 
+	<div class="helper"></div>
+	

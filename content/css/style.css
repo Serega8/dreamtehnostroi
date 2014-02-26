@@ -179,7 +179,7 @@ header {
 }
 .znak1{
 	position: absolute;
-	background: url(../img/znak1.png);
+	background: url(../images/znak1.png);
 	display: block;
 	width: 250px;
 	height: 187px;
@@ -194,7 +194,7 @@ header {
 	min-width: 980px;
 	/*top: 0;
 	left: 0;*/
-	background: url(../img/beton1.jpg);
+	background: url(../images/beton1.jpg);
 	box-shadow: 0 0 8px rgb(0,0,0); /* Параметры тени */
 	-moz-box-shadow: 0 0 8px rgb(0,0,0); /* Для Firefox */
 	-webkit-box-shadow: 0 0 8px rgb(0,0,0); /* Для Safari и Chrome */
@@ -298,7 +298,7 @@ ul{
 .backgroundtwo {
 	width: 100%;
 	min-width: 980px;
-	background: #eee url(../img/grey.png) repeat;
+	background: #eee url(../images/grey.png) repeat;
 	margin-top: 5px;
 	box-shadow: 0 2px 5px rgb(211,211,211);
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.7);
@@ -465,7 +465,7 @@ tr {
 }
 .search-result .hovers tr:hover td, .hovers tr:hover td {
 	cursor: pointer;
-	background: #feae31 url(../img/hovers.png) top center repeat-x;
+	background: #feae31 url(../images/hovers.png) top center repeat-x;
 }
 /*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
 
@@ -552,7 +552,7 @@ footer{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: url(../img/beton1.jpg);
+	background: url(../images/beton1.jpg);
 	/*width: 100%;*/
 	margin-top: 10px auto;
 	color: #454545;
@@ -563,7 +563,7 @@ footer{
 }
 .znak2{
 	position: absolute;
-	background: url(../img/znak2.png);
+	background: url(../images/znak2.png);
 	display: block;
 	width: 311px;
 	height: 196px;
