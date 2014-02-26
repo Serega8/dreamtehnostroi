@@ -1,0 +1,667 @@
+/*  НАЧАЛО СТИЛЕЙ БАЗОВЫХ КРИ*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+/*table, tr, tbody, tfoot, thead,  th, td, */
+caption,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+@white: #fff;
+h1, h2{
+	font-size: 28px;
+	color: @white;
+}
+h3{
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+h4{
+	font-size: 25px;
+	font-weight: normal;
+}
+h5, h6{
+	font-size: 16px;
+}
+textarea {
+  resize: vertical;
+}
+b, strong{
+	font-weight: bold;
+}
+i{
+	font-style: italic;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	.for-transition;
+	outline: none;
+	color: #3182bf;
+}
+a:hover{
+	text-decoration: none;
+	.for-transition;
+}
+p{
+	margin-bottom: 10px;
+	font-size: 15px;
+	color: #4C4C4D;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+.text_center{
+	text-align: center;
+}
+.null{
+	clear: both;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {height: 100%;}
+* html body {height: 100%;}
+html, body {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+}
+* html #container {
+  height: 100%;
+}
+body {
+  background-color: #fff;
+  font-size: 16px; 
+}
+#container{
+	width: 100%;
+	min-width: 960px;
+	min-height: 100%;
+	position: relative;
+	background-color: #fff;
+	z-index: 1;
+	margin: 0 auto;
+}
+.center{
+	max-width: 1200px;
+	min-width: 980px;
+	margin: 0 auto;
+	position: relative;
+}
+.raunded(@radius){
+	border-radius: @radius;
+	-o-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+}
+.for-transition{
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.for-transition-faster{
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.for-transition-none{
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -ms-transition: 0;
+    -o-transition: 0;
+    transition: 0;
+}
+.for-shadow(@x:0px, @y:0px, @thickness:25px, @color:#a7a7a6){
+	box-shadow: @x @y @thickness @color;
+	-o-box-shadow: @x @y @thickness @color;
+	-moz-box-shadow: @x @y @thickness @color;
+	-webkit-box-shadow: @x @y @thickness @color;
+}
+.for-inline-block{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+::selection {
+	background: #294E79; 
+	color: #fff;
+}
+::-moz-selection {
+	background: #294E79; 
+	color: #fff;
+}
+/*  КОНЕЦ СТИЛЕЙ БАЗОВЫХ КРИ*/
+body{
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #454545;
+	background: #ffffff;
+	height: auto;
+	overflow: auto;
+	min-height: 100%;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+}
+/*  НАЧАЛО HEADER*/
+header {
+	width: 100%;
+}
+.znak1{
+	position: absolute;
+	background: url(../img/znak1.png);
+	display: block;
+	width: 250px;
+	height: 187px;
+	top: 0px;
+	right: 20px;
+	z-index: 999;
+}
+.background{
+	/*position: fixed;*/
+	height: 130px;
+	width: 100%;
+	min-width: 980px;
+	/*top: 0;
+	left: 0;*/
+	background: url(../img/beton1.jpg);
+	box-shadow: 0 0 8px rgb(0,0,0); /* Параметры тени */
+	-moz-box-shadow: 0 0 8px rgb(0,0,0); /* Для Firefox */
+	-webkit-box-shadow: 0 0 8px rgb(0,0,0); /* Для Safari и Chrome */
+}	
+.background a {
+	margin: 0px auto;
+	font-family: Impact;
+	font-size: 43px;
+	color: #3D2E2E;
+	/*z-index: 20;*/
+	text-decoration: none;
+	display: block;
+	padding-top: 40px;
+}
+.inner {
+	position: relative;
+	width: 980px;
+	min-width: 980px;
+	margin: 0 auto;
+}
+.white {
+	background: #fff;
+	width:100%;
+	min-width: 980px;
+	display: block;
+	float: left;
+	box-shadow: 0 -2px 5px rgb(0,0,0);
+	-webkit-box-shadow: 0 -2px 5px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 -2px 5px rgba(0,0,0,0.7);
+	
+}
+.menu{
+	font-size: 15px;
+	font-family: Impact;
+	/*height: 40px;*/
+	margin:0px auto;
+	width: 980px;
+	min-width: 980px;
+}
+.menu li a{
+	text-decoration: none;
+	color: #454545;
+	background: #ffffff;
+}
+ul{
+	margin: 0; padding: 0; /* Отключение отступов и полей */
+}
+.menu li{
+	float: left;  
+	display: inline;
+	position: relative; /* We'll need this for the dropdown to work properly */
+}
+.menu li a{
+	display: block;
+	padding: 11px 22px; /* Spacing out the links */
+}
+.menu li a:hover, li a:active{
+	color: #fff;
+	background: #454545;
+	box-shadow: 0 0 6px rgb(0,0,0); /* Параметры тени */
+	-moz-box-shadow: 0 0 6px rgba(0,0,0,0.8); /* Для Firefox */
+	-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.8); /* Для Safari и Chrome */
+	
+}
+.menu li:hover ul{
+	left: 0;
+	opacity: 1;
+}
+.menu li:hover ul a{
+	background: #fff;
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+.menu li:hover ul a:hover{
+	color: #fff;
+	background: #454545;
+}
+.dropdown{
+	list-style: none;
+	position: absolute;
+	left: -9999px;
+	z-index: 10;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s linear;
+	-moz-transition: opacity 0.35s linear;
+	-o-transition: opacity 0.35s linear;
+	transition: opacity 0.35s linear;
+}
+.dropdown li{
+	padding: 0;
+	margin: 0;
+	float: none;
+}
+.dropdown a{
+	white-space: nowrap;
+	text-align: left;
+	display: block;
+}
+.backgroundtwo {
+	width: 100%;
+	min-width: 980px;
+	background: #eee url(../img/grey.png) repeat;
+	margin-top: 5px;
+	box-shadow: 0 2px 5px rgb(211,211,211);
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+	padding-bottom: 10px;
+}
+.basic{
+	width: 980px; /* Ширина макета */
+	min-width: 980px;
+	margin: auto; /* Выравнивание по центру */
+}
+.slider {
+	width: 75% !important;
+	display: block;
+	float:left;
+}
+.carousel-control {
+	position: absolute;
+	top: 36%;
+	bottom: 0;
+	left: 0;
+	width: 10%;
+	font-size: 60px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgb(211,211,211);
+	-webkit-text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+	-moz-text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+	opacity: .7;
+	filter: alpha(opacity=50);
+}
+.carousel-control.left,.carousel-control.right {
+	background-image: none;
+}
+.item h3, {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #FFF;
+	font-size: 30px;
+	margin: 0 0 10px 0;
+}
+.item p {
+	font-family: Courier New;
+	color: #FFF;	
+	margin: 0;
+	font-size: 15px;
+}
+.telephon {
+	/*position: fixed;*/
+	/*z-index: 20;*/
+	font-size: 18px;
+	text-align: left;
+	font-family: Impact; 
+	font-weight: lighter;
+	width: 25%;
+	display: block;
+	float: right;
+	padding-left: 20px;	
+	height: 285px;
+	background: rgb(211,211,211);
+	background: rgba(0,0,0,0.1);
+}
+.telephon h5 {
+	font-size: 25px;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: #3D2E2E;
+	margin-left: 5px;
+}
+.telephon p {
+	margin-bottom: 15px;
+	font-size: 18px;
+	color: #4B4B49;
+	border-bottom: 1px outset;
+	padding-bottom: 19px;
+	max-width: 190px;
+	display: block;
+	margin-left: 5px;
+}
+.telephon p:hover {
+	color: #70706D;
+}
+.whitebackground {
+	width: 100%;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255,0.6); 
+}
+.square {
+	display: block;
+	float:left;
+	width: 6%;
+	padding: 20px 10px 51px 20px;
+
+}
+.hello {
+	width: 69%;
+	display: block;
+	float: left;
+	padding: 20px 20px 25px;
+
+
+}
+.hello p {
+	color: #3D2E2E;
+	font-family: Impact lighter;
+	font-size: 20px;
+	line-height:10px;
+}
+.natbank {
+	width: 25%;
+	display: block;
+	float:right;
+	color:#fff;
+	font-size: 11px;
+
+}
+/*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
+
+.banks {
+/*width: 100%;
+margin-left: 20px;*/
+}
+table, tr, td, table tr td, form, label{
+	position: relative;
+}
+table{
+	border-spacing: 0px; 
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+}
+tbody {
+	display: block;
+	vertical-align: middle;
+	border-color: inherit;
+}
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+	font-size: 12px;
+}
+/*th {
+	font-size: 11px;
+}*/
+.banks th {
+	color: #fff;
+	font-size: 12px;
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: normal;
+	text-align: left;
+	background-color: #8e8e8e;
+}
+.tune td {
+	background: #FFF;
+	text-align: center;
+	padding: 3px 13px 3px 13px!important;
+}
+.banks th, .banks td {
+	vertical-align: middle;
+	text-align: center;
+}
+.search-result .hovers tr:hover td, .hovers tr:hover td {
+	cursor: pointer;
+	background: #feae31 url(../img/hovers.png) top center repeat-x;
+}
+/*bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
+
+/*  END HEADER*/
+/*  основное содержимое ABOUT*/
+.about{ 
+	width: 980px;
+	margin: 45px auto 0px;
+	min-width: 980px;
+}
+.column{
+	font-family: Impact light;
+	float: left;  
+	display: block;
+	width: 47%;
+	margin-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	text-align: left;
+	border: 1px solid #b0afaf;
+}
+.column:nth-child(even) {
+	margin-left: 0%;
+}
+.img {
+	width: 50%;
+	display: block;
+	float:left;
+}
+
+.column a {
+	color:#3D2E2E;
+	background: #fff;
+	padding-left: 5%; 
+	padding-right:5%;
+}
+
+.column h2 {
+    display: block;
+    margin-top: -19px;
+    text-align: center;
+  	padding-bottom: 10%;
+  	font-family: Impact;
+  	font-size: 22px;
+}
+.column1 {
+	float:left;
+}
+.column2 {
+	float:right;
+}
+.column3 {
+	float:left;
+}
+.column4 {
+	float:right;
+}
+.inside{
+	width: 42%;
+	padding-left: 8%;
+	display: block;
+	float:right;
+}
+.inside a {
+	display: block;
+	background: #ffd669;
+	color: #14120c;
+	padding:10% 8%;
+	text-align: center;
+	box-shadow:0px 0px 6px #7E7A7A;
+	margin-top:20%;
+}
+/*  THE END OF основное содержимое ABOUT*/
+
+.helper{
+	width: 100%;
+	height: 312px;
+}	
+footer{
+	width: 100%;
+	min-width: 980px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url(../img/beton1.jpg);
+	/*width: 100%;*/
+	margin-top: 10px auto;
+	color: #454545;
+	box-shadow: inset 0 3px 6px rgb(0,0,0); /* Параметры тени */
+	-moz-box-shadow: inset 0 3px 6px rgba(0,0,0,0.3); /* Для Firefox */
+	-webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,0.3); /* Для Safari и Chrome */
+	
+}
+.znak2{
+	position: absolute;
+	background: url(../img/znak2.png);
+	display: block;
+	width: 311px;
+	height: 196px;
+	bottom: 80px;
+	right: 0px;
+	z-index: 999;
+}
+.bye {
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: Impact;
+}
+.bye h4 {
+	font-size: 30px;
+	text-shadow: 1px 1px 3px #FFFFFF;
+}
+.info{
+	margin:0 auto;
+	width:100%;
+	background-color: rgb(104, 102, 102);
+	background-color: rgba(0, 0, 0, 0.5);
+	
+}
+.info_center {
+	margin:0 auto;
+	width:980px;
+	min-width: 980px;
+	color: #fff;
+	position: relative;
+}
+.contacts_images {
+	width: 7%;
+	float: left;
+	margin-top:20px; 
+	margin-bottom:20px;
+	border-right: 1px outset #fff;
+}
+.contacts_images p {
+	display: block;
+	padding-bottom:10px;
+	padding-top: 2px;
+	color: #fff;
+	text-align: center;
+}
+.contacts{
+	width: 24%; 
+	margin: 0 5% 0 3%;
+	color: #fff;
+	padding-top:20px; 
+	padding-bottom:20px;
+	float: left;
+}
+.contacts p{
+/* 	font-family: Impact light; */
+	color: #E9E6E6;
+	border-bottom: 1px outset #fff;
+	display: block;
+	padding-bottom: 10px; 
+	font-size: 13px;
+}
+.copyright {
+	width: 24%;
+	float: left;
+	color: #fff;
+	padding-top:20px; 
+	padding-bottom:20px;
+	text-align: center;
+}
+.copyright p {
+	color: #E9E6E6;
+	border-bottom: 1px outset #fff;
+	display: block;
+	padding-bottom: 10px; 
+	font-size: 13px;
+	padding-top: 127px;
+}
+.intellect {
+	width: 31%;
+	text-align: right;
+	float: left;
+	color: #fff;
+	padding-top: 147px;
+	padding-bottom: 20px;
+	margin-left: 5%;
+	}
+.intellect a {
+	color: #fff;
+	text-decoration: underline;
+}
+.intellect a:hover {
+	color: #0B92F7;
+	text-decoration: underline;
+}
+.intellect p {
+	color: #E9E6E6;
+	border-bottom: 1px outset #fff;
+	display: block;
+	padding-bottom: 10px; 
+	font-size: 13px;
+}
