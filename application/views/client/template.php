@@ -36,7 +36,7 @@
                 <?// } ?>
                             <ul>
 					<li><a href="/" class="dinamicLink">Главная</a></li>
-					<li><a href="/категории" class="dinamicLink">Категории</a></li> 
+					<!--<li><a href="/категории" class="dinamicLink">Категории</a></li>--> 
 					<li><a href="/услуги-и-цены" class="dinamicLink">Услуги и цены</a> 
 <!--						<ul class="dropdown">
 							<li><a href="#">Алмазная резка</a></li>

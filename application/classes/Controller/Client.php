@@ -105,11 +105,6 @@ class Controller_Client extends Controller_Template {
         $this->template->content = $view;
     }
     
-    public function action_categorii() {
-        $view = View::factory('client/categorii');
-        $this->template->content = $view;
-    }
-    
     public function action_uslugi() {
         $view = View::factory('client/uslugi');
         $this->template->content = $view;

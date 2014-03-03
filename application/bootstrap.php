@@ -122,11 +122,6 @@ Cookie::$salt = 'dev_<bullet>_';
  * defaults for the URI.
  */
 
-Route::set('categorii', 'категории')
-        ->defaults(array(
-            'controller' => 'Client',
-            'action' => 'categorii',
-        ));
 
 Route::set('uslugi', 'услуги-и-цены')
         ->defaults(array(
