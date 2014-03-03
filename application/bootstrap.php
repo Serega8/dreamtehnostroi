@@ -121,6 +121,32 @@ Cookie::$salt = 'dev_<bullet>_';
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
+
+Route::set('categorii', 'категории')
+        ->defaults(array(
+            'controller' => 'Client',
+            'action' => 'categorii',
+        ));
+
+Route::set('uslugi', 'услуги-и-цены')
+        ->defaults(array(
+            'controller' => 'Client',
+            'action' => 'uslugi',
+        ));
+
+Route::set('objects', 'наши-объекты')
+        ->defaults(array(
+            'controller' => 'Client',
+            'action' => 'objects',
+        ));
+
+Route::set('contacts', 'контакты')
+        ->defaults(array(
+            'controller' => 'Client',
+            'action' => 'contacts',
+        ));
+
+
 Route::set('administrator', 'admin(/<action>(/<admin_level2>(/<admin_level3>(/<admin_level4>(/<admin_level5>)))))')
         ->defaults(array(
             'controller' => 'Admin',

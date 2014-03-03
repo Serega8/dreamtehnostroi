@@ -104,6 +104,21 @@ class Controller_Client extends Controller_Template {
         $this->template->seo = ORM::factory('Brands')->seo('/');
         $this->template->content = $view;
     }
+    
+    public function action_categorii() {
+        $view = View::factory('client/categorii');
+        $this->template->content = $view;
+    }
+    
+    public function action_uslugi() {
+        $view = View::factory('client/uslugi');
+        $this->template->content = $view;
+    }
+    
+    public function action_objects() {
+        $view = View::factory('client/objects');
+        $this->template->content = $view;
+    }
 
     public function action_poll() {
         if ($this->request->post()) {

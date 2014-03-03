@@ -21,7 +21,7 @@
         <header>
             <div class="background">
 			<div class="inner">
-				<a href="#" class="logo" target="_self" folder="content">Дрим ТехноСтрой</a>
+				<a href="/" class="logo" target="_self" folder="content">Дрим ТехноСтрой</a>
 				<div class="znak1"></div>
 			</div><!-- inner -->
 		</div><!-- background -->
@@ -36,17 +36,15 @@
                 <?// } ?>
                             <ul>
 					<li><a href="/" class="dinamicLink">Главная</a></li>
-					<li><a href="/о-компании" class="dinamicLink">О компании</a></li> 
-					<li><a href="/услуги" class="dinamicLink">Услуги</a> 
-						<ul class="dropdown">
+					<li><a href="/категории" class="dinamicLink">Категории</a></li> 
+					<li><a href="/услуги-и-цены" class="dinamicLink">Услуги и цены</a> 
+<!--						<ul class="dropdown">
 							<li><a href="#">Алмазная резка</a></li>
 							<li><a href="#">Алмазное сверление</a></li>
 							<li><a href="#">Резка канатом</a></li>
 							<li><a href="#">Демонтажные работы</a></li>
-						</ul></li>
-					<li><a href="/оборудование" class="dinamicLink">Оборудование</a></li>
-					<li><a href="/объекты" class="dinamicLink">Объекты</a></li>
-					<li><a href="/прайс" class="dinamicLink">Прайс</a></li>
+						</ul></li>-->
+					<li><a href="/наши-объекты" class="dinamicLink">Наши объекты</a></li>
 					<li><a href="/контакты" class="dinamicLink">Контакты</a></li>
 				</ul>
 			</div> <!--menu -->
